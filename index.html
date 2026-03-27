@@ -58,6 +58,8 @@ Known Issues:
 	
 
 	function changeText(){
+	var introversion_percent = introversion_count/(introversion_count + extroversion_count)*100;
+	var extroversion_percent = extroversion_count/(introversion_count + extroversion_count)*100;
 	var initialText = document.getElementById("results"); 
 	initialText.innerHTML = "Probability it is introversion = " + introversion_count + "% <br> Probability it is extroversion = " + extroversion_count + "%"
 	}
